@@ -1,9 +1,10 @@
 ---
 galaxy_info:
-  author: systemli
+  author: lookshe
   description: role to maintain and configure munin node
-  company: systemli.org
+  company: www.sl-its.de
   license: GPLv3
+  role_name: munin-node
   min_ansible_version: 1.9.6
   platforms:
     - name: Debian
