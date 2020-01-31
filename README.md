@@ -156,9 +156,8 @@ Defaults:
     munin_node_config_global_timeout: 900
     munin_node_config_timeout: 60
     munin_node_config_host_name: "{{ ansible_fqdn }}"
-    munin_node_config_allow: |
-      allow ^127\.0\.0\.1$
-      allow ^::1$
+    munin_node_allowed_ips:
+      - '^127\.0\.0\.1$'
     munin_node_config_host: "*"
     munin_node_config_port: 4949
     munin_node_plugins_git_update: "no
