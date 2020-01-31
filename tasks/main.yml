@@ -14,7 +14,7 @@
 - name: ensure plugin config is latest
   template:
     src: munin-node.j2
-    dest: /etc/munin/plugin-conf.d/munin-node
+    dest: /etc/munin/plugin-conf.d/ansible.conf
     mode: 0644
   notify: restart munin-node
 
