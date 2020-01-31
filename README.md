@@ -20,14 +20,16 @@ Defaults:
     munin_node_extra_plugins: True
 
     munin_node_plugins_active:
-      - cpu
-      - df
-      - load
-      - memory
-      - uptime
-      - users
-      - swap
-      - threads
+      - name: cpu
+      - name: df
+      - name: if_eth0
+        plugin: if_
+      - name: load
+      - name: memory
+      - name: uptime
+      - name: users
+      - name: swap
+      - name: threads
 
     munin_node_plugins_disabled:
       - diskstats
