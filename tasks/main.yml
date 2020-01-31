@@ -28,8 +28,8 @@
 
 - name: ensure plugins are present
   file:
-    src: "/usr/share/munin/plugins/{{ item.name }}"
-    dest: "/etc/munin/plugins/{{ item.plugin | default( item.name ) }}"
+    src: "/usr/share/munin/plugins/{{ item.plugin | default( item.name ) }}"
+    dest: "/etc/munin/plugins/{{ item.name }}"
     state: link
     force: yes
   with_items: "{{ munin_node_plugins_active }}"
