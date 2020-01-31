@@ -1,7 +1,7 @@
 ansible-munin-node
 ==================
 
-[![Build Status](https://travis-ci.org/systemli/ansible-role-munin-node.svg)](https://travis-ci.org/systemli/ansible-role-munin-node) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-munin--node-blue.svg)](https://galaxy.ansible.com/systemli/munin-node/)
+[![Build Status](https://travis-ci.org/lookshe/ansible-role-munin-node.svg)](https://travis-ci.org/lookshe/ansible-role-munin-node) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-munin--node-blue.svg)](https://galaxy.ansible.com/lookshe/munin-node/)
 
 Role to install & maintain Munin Node
 
@@ -168,14 +168,14 @@ Download
 
 Download latest release with `ansible-galaxy`
 
-	ansible-galaxy install systemli.munin-node
+	ansible-galaxy install lookshe.munin-node
 
 Example Playbook
 ----------------
 
     - hosts: servers
       roles:
-         - { role: systemli.munin-node }
+         - { role: lookshe.munin-node }
 
 Testing & Development
 ---------------------
@@ -202,4 +202,4 @@ GPLv3
 Author Information
 ------------------
 
-https://www.systemli.org
+https://www.lookshe.org
