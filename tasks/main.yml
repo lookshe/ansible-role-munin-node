@@ -47,6 +47,8 @@
   file:
     src: "/usr/local/share/munin-plugins/plugins/{{ item.path }}"
     dest: "/etc/munin/plugins/{{ item.name }}"
+    state: link
+    force: yes
   with_items: "{{ munin_node_extra_plugins_active }}"
   when: munin_node_extra_plugins
   notify: restart munin-node
